@@ -44,6 +44,6 @@ async def remt(event):
   
 @Drone.on(events.NewMessage(incoming=True, pattern=f"{S}"))
 async def start(event):
-    text = "Send me Link of any message to clone it here, For private channel message, send invite link first.\n\n**SUPPORT:** @movies_zilaa"
+    text = "Send me Link of any message to make it forwardable for you, For private channel message, send invite link first.\n\n**SUPPORT:** @shadow_linkz\n\nFor Batch uploads:contact admin: @Critical_cobra"
     await start_srb(event, text)
     
