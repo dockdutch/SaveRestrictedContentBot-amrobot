@@ -14,14 +14,14 @@ async def join(client, invite_link):
         await client.join_chat(invite_link)
         return "Successfully joined the Channel"
     except UserAlreadyParticipant:
-        return "User is already a participant."
+        return "I'm already a participant Baby!"
     except (InviteHashInvalid, InviteHashExpired):
         return "Could not join. Maybe your link is expired or Invalid."
     except FloodWait:
         return "Too many requests, try again later."
     except Exception as e:
         print(e)
-        return "Could not join, try joining manually."
+        return "Could not join, send joining link to admin."
     
 #Regex---------------------------------------------------------------------------------------------------------------
 #to get the url from event
